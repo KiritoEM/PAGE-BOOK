@@ -7,7 +7,11 @@ const Welcoming = (): JSX.Element => {
         <div className="col-6">
           <WelcomingHeader />
         </div>
-        <div className="col-6"></div>
+        <div className="col-6">
+            <div className="section-cover">
+                <img src="/image/Book.png" alt="" />
+            </div>
+        </div>
       </div>
     </section>
   );
