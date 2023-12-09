@@ -5,7 +5,7 @@ import { faChartBar} from "@fortawesome/free-regular-svg-icons";
 const MenuItems = (): JSX.Element => {
   const { menuItems } = NavData();
   return (
-    <div id="menu-items">
+    <div id="menu-items" className="d-none d-lg-flex">
       <ul>
         {menuItems.map((item, index) => (
           <li key={index}>

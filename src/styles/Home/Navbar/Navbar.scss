@@ -11,8 +11,12 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-
         @include container;
+
+         @include screen(small){
+            box-shadow: 0 3px 4px rgba(27, 27, 27, 0.418);
+            height: 4.4rem;
+         }
 
         #section-header {
             height: 100%;
@@ -24,6 +28,10 @@
                 img {
                     width: 80px;
                     object-fit: cover;
+
+                    @include screen(small){
+                        width: 72px;
+                    }
                 }
             }
 
@@ -36,7 +44,10 @@
                     img {
                         width: 34px;
                         object-fit: cover;
-                        border-radius: 3px;
+
+                        @include screen(small){
+                            width: 31px;
+                        }
                     }
                 }
             }
@@ -58,6 +69,7 @@
                     font-size: 15px;
                     padding-top: 5px;
                     padding-bottom: 5px;
+                    white-space: nowrap;
                 }
 
                 #cart {
