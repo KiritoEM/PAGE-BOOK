@@ -1,6 +1,7 @@
 import MenuItems from "./MenuItems";
 import NavHeader from "./NavHeader";
 import NavResponsive from "./NavResponsive";
+import MenuIcon from "./MenuIcon";
 
 const Navbar = (): JSX.Element => {
   return (
@@ -11,6 +12,9 @@ const Navbar = (): JSX.Element => {
 
         {/* ==============menu items============== */}
         <MenuItems />
+
+        {/* ==============menu icon============== */}
+        <MenuIcon />
       </div>
 
       {/* ==============navbar responsive============== */}

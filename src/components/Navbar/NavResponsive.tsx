@@ -1,10 +1,12 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import NavData from "../../helper/Data/NavData";
+import { useNav } from "../../hooks/useNav";
 
 const NavResponsive = (): JSX.Element => {
   const { menuItems } = NavData();
+  const { openMenu } = useNav();
   return (
-    <div id="menu-responsive" className="d-lg-none">
+    <div id="menu-responsive" className={`d-lg-none ${openMenu ? "open-menu" : "close-menu"}`}>
       <ul>
         {menuItems.map((item, index) => (
           <li key={index}>

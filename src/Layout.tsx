@@ -1,5 +1,6 @@
-import { Fragment, ReactNode } from "react";
+import { ReactNode } from "react";
 import Navbar from "./components/Navbar/Navbar";
+import { NavProvider } from "./hooks/useNav";
 
 interface Ichildren {
   children: ReactNode;
@@ -7,10 +8,10 @@ interface Ichildren {
 
 const Layout: React.FC<Ichildren> = ({ children }): JSX.Element => {
   return (
-    <Fragment>
+    <NavProvider>
       <Navbar />
       {children}
-    </Fragment>
+    </NavProvider>
   );
 };
 
