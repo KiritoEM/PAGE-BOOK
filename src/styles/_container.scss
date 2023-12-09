@@ -1,9 +1,14 @@
-@mixin container{
+@mixin container {
   padding-left: 11.5%;
   padding-right: 11.5%;
 
-   @include screen(small){
+  @include screen(small) {
     padding-left: 8.5%;
-  padding-right: 8.5%;
-   }
+    padding-right: 8.5%;
+  }
+
+  @include screen(medium) {
+    padding-left: 9%;
+    padding-right: 9%;
+  }
 }
