@@ -1,19 +1,12 @@
-import { IconProp } from "@fortawesome/fontawesome-svg-core";
-import {
-  faFacebook,
-  faLinkedin,
-  faTwitter,
-} from "@fortawesome/free-brands-svg-icons";
-
 interface IsocialIcons {
-  icon: IconProp;
+  icon: string;
 }
 
 export default function NavData() {
   const socialIcons: IsocialIcons[] = [
-    { icon: faFacebook },
-    { icon: faTwitter },
-    { icon: faLinkedin },
+    { icon: "/fb.png" },
+    { icon: "/twitter.png" },
+    { icon: "/linkedIn.png" },
   ];
 
   return { socialIcons };
