@@ -1,10 +1,12 @@
-import React from 'react';
+import Layout from "./Layout";
+import "./styles/global.scss";
+import Home from "./pages/Home";
 
-const App = () : JSX.Element => {
+const App = (): JSX.Element => {
   return (
-    <div>
-      
-    </div>
+    <Layout>
+      <Home />
+    </Layout>
   );
 };
 

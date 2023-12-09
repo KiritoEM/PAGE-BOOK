@@ -1,0 +1,25 @@
+#navbar{
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+
+       &__container{
+        width: 100%;
+        height: 5.5rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        @include container;
+
+          #section-header{
+            height: max-content;
+
+              img{
+                width: 85px;
+              }
+          }
+       }
+}
