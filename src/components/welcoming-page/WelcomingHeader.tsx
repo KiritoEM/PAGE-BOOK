@@ -1,4 +1,7 @@
+import WelcomingData from "../../helper/Data/WelcomingData";
+
 const WelcomingHeader = (): JSX.Element => {
+  const { detailsData } = WelcomingData();
   const buttons = [
     { label: "Order Today", id: "btn-1" },
     { label: "Read Free Demo", id: "btn-2" },
@@ -26,7 +29,19 @@ const WelcomingHeader = (): JSX.Element => {
           </div>
         ))}
       </div>
-      <div className="details"></div>
+      <div className="details mt-5">
+        {detailsData.map((item, index) => (
+          <div className="point">
+            <div className="img">
+              <img src="/image/Point.png" alt="" />
+            </div>
+            <div className="content">
+              <h5>{item.title}</h5>
+              <p>{item.text}</p>
+            </div>
+          </div>
+        ))}
+      </div>
     </section>
   );
 };
