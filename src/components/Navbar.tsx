@@ -1,9 +1,9 @@
-import MenuItems from "./MenuItems";
-import NavHeader from "./NavHeader";
-import NavResponsive from "./NavResponsive";
-import MenuIcon from "./MenuIcon";
-import { useNav } from "../../hooks/useNav";
-import Overlay from "./Overlay";
+import MenuItems from "./Navbar/MenuItems";
+import NavHeader from "./Navbar/NavHeader";
+import NavResponsive from "./Navbar/NavResponsive";
+import MenuIcon from "./Navbar/MenuIcon";
+import { useNav } from "../hooks/useNav";
+import Overlay from "./Navbar/Overlay";
 
 const Navbar = (): JSX.Element => {
   const { menuToogle, openOverlay } = useNav();
