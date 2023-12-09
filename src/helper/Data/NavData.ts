@@ -1,5 +1,14 @@
+import { IconProp } from "@fortawesome/fontawesome-svg-core";
+import { faChevronDown, faSortDown } from "@fortawesome/free-solid-svg-icons";
+
 interface IsocialIcons {
   icon: string;
+}
+
+interface ImenuItems{
+    icon?: IconProp;
+    label :string;
+    id?:string
 }
 
 export default function NavData() {
@@ -9,5 +18,13 @@ export default function NavData() {
     { icon: "/linkedIn.png" },
   ];
 
-  return { socialIcons };
+  const menuItems : ImenuItems[] =[
+    {label:"Home"},
+    {label:"Pages" , icon:faChevronDown},
+    {label:"About"},
+    {label:"Services"},
+    {label:"Contact"},
+  ]
+
+  return { socialIcons , menuItems };
 }

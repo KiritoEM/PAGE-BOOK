@@ -34,10 +34,51 @@
                 .icon {
 
                     img {
-                        width: 35px;
+                        width: 34px;
                         object-fit: cover;
                         border-radius: 3px;
                     }
+                }
+            }
+        }
+
+        #menu-items {
+            display: flex;
+            height: 100%;
+            align-items: center;
+
+            ul {
+                display: flex;
+                flex-direction: row;
+                gap: 38px;
+                margin-bottom: 0;
+
+                li {
+                    color: $color-white;
+                    font-size: 15px;
+                    padding-top: 5px;
+                    padding-bottom: 5px;
+                }
+
+                #cart {
+                    margin-top: -3px;
+                    position: relative;
+                    left: -14px;
+
+                    img {
+                        width: 33px;
+                        object-fit: contain;
+                    }
+                }
+
+                #order {
+                    position: relative;
+                    left: -25px;
+                    padding-left: 23px;
+                    padding-right: 23px;
+                    background-color: $color-secondary;
+                    color: $color-primary;
+                    font-family: $font-cardo;
                 }
             }
         }
