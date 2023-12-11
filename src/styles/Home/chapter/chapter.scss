@@ -3,7 +3,7 @@
     overflow: hidden;
     background-color: #F4F8FF;
     padding-top: 5rem;
-    padding-bottom: 5rem;
+    padding-bottom:2rem;
     @include container;
 
     .section-header {
@@ -56,7 +56,8 @@
             &__points {
                 margin-top: 22px;
                 width: 100%;
-                white-space: nowrap;
+
+                
 
                 .content {
                     display: flex;
@@ -83,6 +84,15 @@
     .section-button{
         width: 33%;
         margin: 4rem auto;
+        height: max-content;
+
+        @include screen(medium){
+            width: 50%;
+        }
+
+        @include screen(small){
+            width: 94%;
+        }
 
          .button{
 

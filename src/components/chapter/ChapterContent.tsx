@@ -5,7 +5,7 @@ const ChapterContent = (): JSX.Element => {
   return (
     <div className="row gx-4 gy-4">
       {chapterPoints.map((item, index) => (
-        <div className="col-6" key={index}>
+        <div className="col-lg-6" key={index}>
           <div className="box">
             <div className="box__title">
               <h5>{item.title}</h5>
@@ -17,8 +17,8 @@ const ChapterContent = (): JSX.Element => {
               </p>
             </div>
             <div className="box__points">
-              <div className="row">
-                <div className="col-5">
+              <div className="row gy-3 gx-0">
+                <div className="col-md-5">
                   <div className="content">
                     <div className="img">
                       <img src="/image/Point.png" alt="" />
@@ -29,7 +29,7 @@ const ChapterContent = (): JSX.Element => {
                     </div>
                   </div>
                 </div>
-                <div className="col-7">
+                <div className="col-md-7">
                   <div className="content">
                     <div className="img">
                       <img src="/image/Point.png" alt="" />
