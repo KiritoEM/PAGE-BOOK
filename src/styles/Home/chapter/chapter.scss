@@ -1,0 +1,26 @@
+#chapter {
+    width: 100%;
+    overflow: hidden;
+    background-color: #F4F8FF;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    @include container;
+
+    .section-header {
+        text-align: center;
+
+        h3 {
+            color: $color-primary;
+            font-family: $font-cardo;
+            font-weight: 600;
+        }
+
+        .line {
+            width: 40px;
+            margin: 0.8rem auto;
+            height: 2px;
+            background-color: $color-secondary;
+        }
+    }
+
+}

@@ -4,6 +4,7 @@ import About from "../components/About";
 import Trusted from "../components/Trusted";
 import Callout from "../components/Callout";
 import Learn from "../components/Learn";
+import Chapter from "../components/Chapter";
 
 const Home = (): JSX.Element => {
   return (
@@ -14,6 +15,7 @@ const Home = (): JSX.Element => {
       <Trusted />
       <Callout />
       <Learn />
+      <Chapter />
     </section>
   );
 };
