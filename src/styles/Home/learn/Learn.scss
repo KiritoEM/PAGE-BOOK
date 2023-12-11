@@ -1,0 +1,74 @@
+#learn {
+    width: 100%;
+    overflow: hidden;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    @include container;
+
+    .section-header {
+        text-align: center;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        h3 {
+            color: $color-primary;
+            font-family: $font-cardo;
+            font-weight: 600;
+        }
+
+        .line {
+            width: 40px;
+            margin: 0.8rem auto;
+            height: 2px;
+            background-color: $color-secondary;
+        }
+    }
+
+    .section-content{
+        margin-top: 25px;
+
+         .learn-content{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+
+             .learn-card{
+                width: 100%;
+                height: max-content;
+                background-color: #F4F8FF;
+                padding: 30px;
+
+                 .img{
+
+                    img{
+                        width: 37px;
+                    }
+                 }
+
+                 .text{
+                    margin-top: 1.5rem;
+
+                    h5{
+                        color: $color-primary;
+                        font-family: $font-cardo;
+                    }
+                 }
+             }
+         }
+
+         .learn-cover{
+            width: 100%;
+            height: 100%;
+            margin-left: 15px;
+
+             img{
+                width: 90%;
+                object-fit: contain;
+             }
+         }
+    }
+}

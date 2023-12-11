@@ -3,6 +3,7 @@ import AuthorBook from "../components/AuthorBook";
 import About from "../components/About";
 import Trusted from "../components/Trusted";
 import Callout from "../components/Callout";
+import Learn from "../components/Learn";
 
 const Home = (): JSX.Element => {
   return (
@@ -12,6 +13,7 @@ const Home = (): JSX.Element => {
       <About />
       <Trusted />
       <Callout />
+      <Learn />
     </section>
   );
 };
