@@ -3,8 +3,8 @@
     overflow: hidden;
     height: max-content;
     background-color: #F4F8FF;
-    padding-top: 4rem;
-    padding-bottom: 4rem;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
     @include container;
 
     .section-cover {
@@ -25,6 +25,10 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+
+        @include screen(small) {
+            margin-left: 0;
+        }
 
         .title {
             h3 {
@@ -56,6 +60,11 @@
             .item {
                 margin-top: 1rem;
 
+                @include screen(small) {
+                    padding-top: 17px;
+                }
+        
+
                 h1 {
                     font-family: $font-cardo;
                     color: $color-primary;
@@ -69,6 +78,11 @@
 
             #count-1 {
                 padding-right: 30px;
+
+                @include screen(small) {
+                    padding-right: 20px;
+                }
+        
             }
 
             #count-2 {
@@ -76,12 +90,23 @@
                 padding-right: 25px;
                 border-right: 1px solid $color-secondary;
                 border-left: 1px solid $color-secondary;
+
+                @include screen(small) {
+                    padding-left: 20px;
+                    padding-right: 20px;
+                }
+        
             }
 
             #count-3 {
                 padding-left: 30px;
+
+                @include screen(small) {
+                    padding-left: 20px;
+                }
+        
             }
-        }
+        }   
 
         .details {
             width: max-content;
@@ -90,12 +115,29 @@
             display: flex;
             gap: 11px;
 
+            @include screen(small){
+                margin-top: 2rem;
+                width: 100%;
+            }
+
+            @include screen(medium) {
+               width: 100%;
+            }
+
             .img {
                 width: 33%;
                 padding: 10px;
                 height: 100%;
                 display: flex;
                 align-items: center;
+
+                @include screen(medium) {
+                    width: 30%;
+                }
+
+                @include screen(small) {
+                    display: none;
+                }        
 
                 img {
                     width: 100%;
@@ -111,6 +153,16 @@
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
+
+                @include screen(medium) {
+                     width: 95%;
+                }
+
+                @include screen(small) {
+                    width: 100%;
+                    gap: 8px;
+                    padding: 16px 18px 16px 18px;
+                }        
 
                  h6{
                     color: $color-secondary;
