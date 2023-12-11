@@ -10,9 +10,9 @@ const Trusted = (): JSX.Element => {
         <div className="line"></div>
       </div>
       <div className="section-content">
-        <div className="row gx-5">
+        <div className="row gx-5 gy-4 gy-lg-2">
           {trusted.map((item, index) => (
-            <div className="col-3" key={index}>
+            <div className="col-md-6 col-lg-3" key={index}>
               <TrustedCard {...item} />
             </div>
           ))}
