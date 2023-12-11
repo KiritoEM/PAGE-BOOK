@@ -23,4 +23,59 @@
         }
     }
 
+    .section-content {
+        margin-top: 2.4rem;
+
+        .box {
+            width: 100%;
+            height: max-content;
+            background-color: $color-white;
+            border-radius: 3px;
+            box-shadow: 0 0 5px rgba(141, 140, 140, 0.164);
+            padding: 34px;
+
+            &__title {
+
+                h5 {
+                    margin-bottom: 0;
+                    color: $color-primary;
+                    font-weight: 600;
+                    font-family: $font-cardo;
+                }
+            }
+
+            &__text {
+                margin-top: 14px;
+
+                p {
+                    color: $gris;
+                    margin-bottom: 0;
+                }
+            }
+
+            &__points {
+                margin-top: 22px;
+                width: 100%;
+
+                .content {
+                    display: flex;
+                    gap: 14px;
+                    width: 100%;
+
+                    h5 {
+                        margin-bottom: 0;
+                        color: $color-primary;
+                        font-weight: 600;
+                        font-family: $font-cardo;
+                    }
+
+                    p {
+                        color: $gris;
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+
 }
