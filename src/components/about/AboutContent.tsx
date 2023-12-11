@@ -33,6 +33,16 @@ const AboutContent = (): JSX.Element => {
           </div>
         ))}
       </div>
+      <div className="details">
+        <div className="img">
+          <img src="/image/details.png" alt="" />
+        </div>
+        <div className="header">
+          <h6>John Abraham , Ph.d</h6>
+          <p>Mail : johnabraham@gmail.com</p>
+          <p>Phone : (+2) 123 545 9000</p>
+        </div>
+      </div>
     </div>
   );
 };

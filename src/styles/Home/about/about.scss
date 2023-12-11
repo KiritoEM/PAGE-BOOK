@@ -52,7 +52,6 @@
         .counter {
             display: flex;
             flex-direction: row;
-            gap: 20px;
 
             .item {
                 margin-top: 1rem;
@@ -68,19 +67,61 @@
                 }
             }
 
-            #count-1{
-                padding-right: 35px;
+            #count-1 {
+                padding-right: 30px;
             }
 
-            #count-2{
-                padding-left: 35px;
-                padding-right: 35px;
+            #count-2 {
+                padding-left: 30px;
+                padding-right: 25px;
                 border-right: 1px solid $color-secondary;
                 border-left: 1px solid $color-secondary;
             }
 
-            #count-3{
-                padding-left: 35px;
+            #count-3 {
+                padding-left: 30px;
+            }
+        }
+
+        .details {
+            width: max-content;
+            background-color: $color-primary;
+            margin-top: 1.4rem;
+            display: flex;
+            gap: 11px;
+
+            .img {
+                width: 33%;
+                padding: 10px;
+                height: 100%;
+                display: flex;
+                align-items: center;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                }
+            }
+
+            .header{
+                width: 67%;
+                height: 100%;
+                padding: 16px 9px 16px 9px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+                 h6{
+                    color: $color-secondary;
+                    font-family: $font-cardo;
+                    font-weight: 600;
+                 }
+
+                 p{
+                    color: $gris;
+                    margin-bottom: 0;
+                 }
             }
         }
     }
