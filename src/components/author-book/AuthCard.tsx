@@ -18,13 +18,13 @@ const AuthCard: React.FC<IauthProps> = ({
 }): JSX.Element => {
   return (
     <div className="auth-card">
-      <div className="row">
-        <div className="col-5">
+      <div className="row gy-3 gy-md-2">
+        <div className="col-md-6">
           <div className="img">
             <img src={img} alt="" />
           </div>
         </div>
-        <div className="col-7">
+        <div className="col-md-6">
           <div className="content">
             <div className="header">
               <h4>{title}</h4>

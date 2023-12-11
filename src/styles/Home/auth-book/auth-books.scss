@@ -1,10 +1,16 @@
 #auth-book{
     width: 100%;
+    overflow: hidden;
     position: relative;
     top: 6.7rem;
     padding-top: 4rem;
-    padding-bottom: 3rem;
+    padding-bottom: 5rem;
     @include container;
+
+     @include screen(small){
+        top: 0;
+        padding-top: 3.5rem;
+     }
 
      .section-header{
         text-align: center;
@@ -24,6 +30,6 @@
      }
 
      .section-content{
-        margin-top: 4rem;
+        margin-top: 3rem;
      }
 }

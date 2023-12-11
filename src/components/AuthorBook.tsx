@@ -1,6 +1,8 @@
 import AuthCard from "./author-book/AuthCard";
+import AuthBook from "../helper/Data/AuthBook";
 
 const AuthorBook = (): JSX.Element => {
+  const { authBooks } = AuthBook();
   return (
     <section id="auth-book">
       <div className="section-header">
@@ -8,10 +10,12 @@ const AuthorBook = (): JSX.Element => {
         <div className="line"></div>
       </div>
       <div className="section-content">
-        <div className="row">
-          <div className="col-6">
-            <AuthCard />
-          </div>
+        <div className="row gy-5 gy-lg-2 gx-5">
+          {authBooks.map((item, index) => (
+            <div className="col-lg-6" key={index}>
+              <AuthCard {...item} />
+            </div>
+          ))}
         </div>
       </div>
     </section>
