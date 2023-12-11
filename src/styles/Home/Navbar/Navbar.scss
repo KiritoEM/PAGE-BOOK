@@ -1,3 +1,5 @@
+@import "./Navresponsive.scss";
+
 #navbar {
     width: 100%;
     height: max-content;
@@ -14,23 +16,23 @@
         align-items: center;
         @include container;
 
-         @include screen(small){
+        @include screen(small) {
             box-shadow: 0 2px 7px rgba(27, 27, 27, 0.459);
             height: 4.4rem;
             z-index: 500;
             width: 100%;
             overflow: hidden;
             background-color: $color-primary;
-         }
+        }
 
-         @include screen(medium){
+        @include screen(medium) {
             box-shadow: 0 2px 7px rgba(27, 27, 27, 0.459);
             height: 4.8rem;
             z-index: 500;
             width: 100%;
             overflow: hidden;
             background-color: $color-primary;
-         }
+        }
 
         #section-header {
             height: 100%;
@@ -38,7 +40,7 @@
             align-items: center;
             gap: 12px;
 
-            @include screen(small){
+            @include screen(small) {
                 gap: 2%;
             }
 
@@ -47,7 +49,7 @@
                     width: 80px;
                     object-fit: cover;
 
-                    @include screen(small){
+                    @include screen(small) {
                         width: 72px;
                     }
                 }
@@ -63,7 +65,7 @@
                         width: 34px;
                         object-fit: cover;
 
-                        @include screen(small){
+                        @include screen(small) {
                             width: 31px;
                         }
                     }

@@ -1,35 +1,36 @@
-#auth-book{
+@import "auth-card.scss";
+
+#auth-book {
     width: 100%;
     overflow: hidden;
-    position: relative;
-    top: 6.7rem;
+    margin-top: 6.7rem;
     padding-top: 4rem;
-    padding-bottom: 5rem;
+    padding-bottom: 6rem;
     @include container;
 
-     @include screen(small){
+    @include screen(small) {
         top: 0;
         padding-top: 3.5rem;
-     }
+    }
 
-     .section-header{
+    .section-header {
         text-align: center;
-         
-        h3{
+
+        h3 {
             color: $color-primary;
             font-family: $font-cardo;
             font-weight: 600;
         }
 
-        .line{
+        .line {
             width: 36px;
             margin: 0.8rem auto;
             height: 2px;
             background-color: $color-secondary;
         }
-     }
+    }
 
-     .section-content{
+    .section-content {
         margin-top: 3rem;
-     }
+    }
 }
