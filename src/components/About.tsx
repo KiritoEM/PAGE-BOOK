@@ -3,7 +3,7 @@ import AboutContent from "./about/AboutContent";
 const About = (): JSX.Element => {
   return (
     <section id="about">
-      <div className="row">
+      <div className="row gx-5">
         <div className="col-5">
           <div className="section-cover">
             <img src="/image/about.png" alt="" />
