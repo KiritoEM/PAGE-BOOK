@@ -18,7 +18,7 @@ const ChapterContent = (): JSX.Element => {
             </div>
             <div className="box__points">
               <div className="row">
-                <div className="col-6">
+                <div className="col-5">
                   <div className="content">
                     <div className="img">
                       <img src="/image/Point.png" alt="" />
@@ -29,7 +29,17 @@ const ChapterContent = (): JSX.Element => {
                     </div>
                   </div>
                 </div>
-                <div className="col-6"></div>
+                <div className="col-7">
+                  <div className="content">
+                    <div className="img">
+                      <img src="/image/Point.png" alt="" />
+                    </div>
+                    <div className="content">
+                      <h5>Length :</h5>
+                      <p>1 Hour 15 mins</p>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

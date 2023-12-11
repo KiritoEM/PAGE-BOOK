@@ -8,7 +8,18 @@ const Chapter = (): JSX.Element => {
         <div className="line"></div>
       </div>
       <div className="section-content">
-          <ChapterContent />
+        <ChapterContent />
+      </div>
+      <div className="section-button">
+        <div className="button">
+          <button className="btn">Start a 15-Days Free Trail</button>
+        </div>
+        <div className="text mt-4">
+          <p>Short description about each chapter</p>
+          <p className="mt-2">
+            <b>Have any questions?</b> Contact us
+          </p>
+        </div>
       </div>
     </section>
   );
