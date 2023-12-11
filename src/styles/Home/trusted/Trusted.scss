@@ -1,3 +1,5 @@
+@import "./trusted-card.scss";
+
 #trusted {
     width: 100%;
     overflow: hidden;
@@ -20,5 +22,9 @@
             height: 2px;
             background-color: $color-secondary;
         }
+    }
+
+    .section-content{
+        margin-top: 2.6rem;
     }
 }
