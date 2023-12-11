@@ -6,7 +6,7 @@ const LearnContent = (): JSX.Element => {
     <div className="learn-content">
       <div className="row gx-4 gy-4">
         {learnContents.map((item, index) => (
-          <div className="col-6" key={index}>
+          <div className="col-md-6" key={index}>
             <div className="learn-card">
               <div className="img">
                 <img src={item.img} alt="" />

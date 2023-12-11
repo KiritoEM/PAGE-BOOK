@@ -8,11 +8,11 @@ const Learn = (): JSX.Element => {
         <div className="line"></div>
       </div>
       <div className="section-content">
-        <div className="row gx-5">
-          <div className="col-6">
+        <div className="row gx-5 gy-5 gy-lg-2">
+          <div className="col-lg-6">
             <LearnContent />
           </div>
-          <div className="col-6">
+          <div className="col-lg-6">
             <div className="learn-cover">
               <img src="/image/leanr-cover.png" alt="" />
             </div>
